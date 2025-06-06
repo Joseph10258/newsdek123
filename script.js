@@ -1,5 +1,5 @@
 // ✅ Replace with your actual GNews API key
-const apiKey = 'YOUR_GNEWS_API_KEY';
+const apiKey = '391bc945b3c330720aa3109afd88f2c8';
 
 // Search button event listener
 document.getElementById('searchButton').addEventListener('click', function (e) {

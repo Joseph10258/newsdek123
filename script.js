@@ -9,7 +9,7 @@ window.onload = function () {
 };
 
 function loadDefaultNews() {
-  const url = `https://gnews.io/api/v4/search?q=scholarship&lang=en&max=12&token=${apiKey}`;
+  const url = `https://gnews.io/api/v4/search?q=everything&lang=en&max=10&token=${apiKey}`;
   fetchAndDisplay(url);
 }
 

@@ -5,12 +5,12 @@ document.getElementById('searchButton').addEventListener('click', function (e) {
   searchNews();
 });
 
-window.onload = function() {
+window.onload = function () {
   loadDefaultNews();
 };
 
 function loadDefaultNews() {
-  const url = `https://newsapi.org/v2/everything?q=scholarships&pageSize=12&language=en&apiKey=${apiKey}`;
+  const url = `https://newsapi.org/v2/everything?q=scholarship&pageSize=12&language=en&apiKey=${apiKey}`;
   fetchAndDisplay(url);
 }
 

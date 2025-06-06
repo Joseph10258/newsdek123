@@ -20,7 +20,7 @@ function searchNews() {
     alert('Please enter a search term.');
     return;
   }
-  const url = `https://gnews.io/api/v4/everything?q=${query}&pageSize=12&language=en&apiKey=${apiKey}`;
+  const url = `https://gnews.io/api/v4/search?q=scholarship&lang=en&max=10&apikey=${apiKey}`;
   fetchAndDisplay(url, query);
 }
 

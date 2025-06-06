@@ -31,6 +31,10 @@ function fetchAndDisplay(url, query = '') {
       const articles = data.articles;
       const blogContainer = document.getElementById('blogContainer');
       blogContainer.innerHTML = '';
+      if (data.status !== 'ok') {
+    blogContainer.innerHTML = `<div style="text-align:center; font-size:18px; padding:20px;">⚠️ ${data.message}</div>`;
+    return;
+  }
 
       if (!articles.length) {
         blogContainer.innerHTML = `<div style="text-align:center; font-size:18px; padding:20px;">😢 No news found for "<strong>${query}</strong>". Try again.</div>`;

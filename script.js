@@ -10,7 +10,7 @@ window.onload = function () {
 };
 
 function loadDefaultNews() {
-  const url = `https://newsapi.org/v2/everything?q=everything&pageSize=12&language=en&apiKey=${apiKey}`;
+  const url = `https://newsapi.org/v2/everything?q=scholarship&pageSize=12&language=en&apiKey=${apiKey}`;
   fetchAndDisplay(url);
 }
 

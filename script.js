@@ -31,7 +31,8 @@ function fetchAndDisplay(url, query = '') {
       const articles = data.articles;
       const blogContainer = document.getElementById('blogContainer');
       blogContainer.innerHTML = '';
-        if (data.status !== 'ok') {
+      
+      if (data.status !== 'ok') {
     blogContainer.innerHTML = `<div style="text-align:center; font-size:18px; padding:20px;">⚠️ ${data.message}</div>`;
     return;
   }

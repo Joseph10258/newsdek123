@@ -5,7 +5,7 @@ document.getElementById('searchButton').addEventListener('click', function (e) {
   searchNews();
 });
 
-window.onload = function () {
+window.onload = function() {
   loadDefaultNews();
 };
 
